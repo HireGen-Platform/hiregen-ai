@@ -1,30 +1,30 @@
-# Quick Setup Guide - Platform & Security (Team 1)
+# Developer Setup Guide - Team 1 (Platform & Security)
 
-Hey guys, yahan quick steps hain project setup karne ke liye taaki sab log shuru kar sakein.
+Quick steps to get the project running locally so we can start coding.
 
-## Requirements (Install kar lena):
-- Node.js (LTS version download kar lo)
-- Git (command line ya GitHub Desktop jo sahi lage)
-- PostgreSQL (database ke liye)
-- VS Code editor
+## Prereqs to install:
+- Node.js (LTS version)
+- Git (CLI or GitHub Desktop)
+- PostgreSQL
+- VS Code (or whatever editor you like)
 
-## Steps to run:
-1. Folder ke andar jaao:
+## Run steps:
+1. Go into the folder:
    `cd platform-security`
-2. Packages install karo:
-   `npm install`  (agar error aaye powershell script block ka toh `npm.cmd install` chalana)
-3. Server run karke check karo:
-   `node src/server.js` (port 3000 par run hona chahiye)
+2. Install packages:
+   `npm install` (run `npm.cmd install` if PowerShell blocks script execution)
+3. Test the server:
+   `node src/server.js` (should start on port 3000)
 
-## Folder layout kya hai:
-- `routes/` -> endpoints definitions aur zod validations
-- `controllers/` -> requests ko routes se services tak pass karna
-- `services/` -> actual logic (like login verification, hashing passwords, generating tokens)
-- `repositories/` -> direct raw SQL queries (no database queries in routes or services)
-- `middleware/` -> JWT validation and role-based permissions (RBAC)
-- `config/` -> db config variables
+## Folder layout:
+- `routes/` -> holds endpoint paths and request validations (using zod)
+- `controllers/` -> connects routes to services
+- `services/` -> actual logic (auth logic, password hashing, token gen)
+- `repositories/` -> SQL queries only (no DB logic in services or routes)
+- `middleware/` -> JWT validation and RBAC role checks
+- `config/` -> DB connections and config keys
 
-## Help:
-Seekhne ke liye ChatGPT/Claude ki help le sakte ho (jaise zod validations ya fastify setup ke codes search kar lo). Kuch bhi block ho toh group par screenshot daal dena, discuss karke fix karenge.
+## Note:
+If you need help, feel free to use ChatGPT/Claude to learn Fastify, Zod or PostgreSQL connections. If you get blocked, just send a screenshot in the group chat and we'll fix it together.
 
-*Archana: laptop issue solve hone tak aap login/auth ke logic, requirements list aur validation test cases hand-written design karengi, and pull requests review karengi on GitHub mobile.*
+*Archana: Since you don't have a laptop right now, you will draft the API requirements, validation cases, and manual test cases, and help with reviewing pull requests on GitHub mobile.*
