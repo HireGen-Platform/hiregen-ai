@@ -1,1 +1,27 @@
-/platform-security/    @am323065 @Alekhya0508
+﻿# Global Default Owners
+* @HireGen-AI/team-leads
+
+# TEAM 1: Platform & Security
+/apps/backend/src/config/ @HireGen-AI/platform-security-team
+/apps/backend/src/middleware/ @HireGen-AI/platform-security-team
+/apps/backend/src/routes/v1/auth/ @HireGen-AI/platform-security-team
+/packages/database/ @HireGen-AI/platform-security-team
+/packages/shared-types/ @HireGen-AI/platform-security-team
+
+# TEAM 2: Hiring Intelligence
+/apps/backend/src/routes/v1/signals/ @HireGen-AI/hiring-intelligence-team
+
+# TEAM 3: AI Platform
+/apps/backend/src/routes/v1/agents/ @HireGen-AI/ai-platform-team
+/packages/ai-engine/ @HireGen-AI/ai-platform-team
+
+# TEAM 4: Automation & Infrastructure
+/automation/ @HireGen-AI/automation-team
+/infra/ @HireGen-AI/automation-team
+/packages/queue/ @HireGen-AI/automation-team
+/apps/backend/src/routes/v1/webhooks/ @HireGen-AI/automation-team
+docker-compose.yml @HireGen-AI/automation-team
+
+# TEAM 5: Product & Quality Assurance
+/apps/frontend/ @HireGen-AI/product-team
+/tests/ @HireGen-AI/product-team
